@@ -54,7 +54,7 @@ public class DataContext{
                 CREATE TABLE IF NOT EXISTS Songs (
                     Id SERIAL PRIMARY KEY,
                     Title VARCHAR,
-                    Band VARCHAR
+                    Artist VARCHAR
                 );
             """;
             await connection.ExecuteAsync(sql);
@@ -67,7 +67,7 @@ public class DataContext{
 
         async Task _injectUsers(){
             var inject = """
-                INSERT INTO Songs (Title, Band)
+                INSERT INTO Songs (Title, Artist)
                 VALUES (
                     'Bohemian Rhapsody',
                     'Queen'
