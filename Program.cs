@@ -25,24 +25,32 @@ var builder = WebApplication.CreateBuilder(args);
     services.AddSingleton<DataContext>();
     services.AddScoped()<IKaraokeReopsitory, KaraokeRepository>();
 }
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+//ensure database and tables exist
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    using var scope = app.services.CreateScope();
+    var context = scope.ServiceProvider.GetRequiredService<DataContext>();
+    await context.Init();
 }
 
-app.UseHttpsRedirection();
+//configure HTTP request pipeline
+{
+    //global cors policy
+    app.UseCors(x => x
+        .AllowAnyOrigin()
+        .AllowAnyMethod()
+        .AllowAnyHeader()
+    );
 
-app.UseAuthorization();
+    //global error handler
+    app.UseMiddleware<ErrorHandlerMiddleWare>();
 
-app.MapControllers();
+    app.MapControllers();
+}
+
+app.Run("http://localhost:4000");
+
 
 app.Run();
