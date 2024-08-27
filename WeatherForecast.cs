@@ -1,4 +1,4 @@
-namespace _;
+namespace CRUD_Entity_Framework_Core_MVC_01;
 
 public class WeatherForecast
 {
