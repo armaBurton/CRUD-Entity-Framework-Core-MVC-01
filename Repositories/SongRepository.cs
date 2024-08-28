@@ -16,4 +16,70 @@ public interface ISongRepository{
 
 public class SongRepository : ISongRepository{
     private DataContext _context;
+
+    public SongRepository(DataContext context){
+        _context = context;
+    }
+
+    public async Task<IEnumerable<Song>> GetAll(){
+        using var connection = _context.CreateConnection();
+        var sql = """
+            SELECT * FROM Songs
+        """;
+        return await connection.QueryAsync<Song>(sql);
+    }
+
+    public async Task<Song> GetById(int id){
+        using var connection = _context.CreateConnection();
+        var sql = """
+            SELECT * FROM Songs
+            WHERE Id = @Id
+        """;
+        return await connection.QuerySingleOrDefaultAsync<User>(sql, new { id });
+    }
+
+    public async Task<Song> GetByTitle(string Title){
+        var sql = """
+            SELECT * FROM Songs
+            WHERE Title = @Title
+        """;
+        return await connection.QuerySingleOrDefaultAsync<Song>(sql, new { title });
+    }
+
+    public async Task<Song> GetByArtist(string artist){
+        var sql = """
+            SELECT * FROM Songs
+            WHERE Artist = @Artist
+        """;
+        return await connection.QueryAsync<Song>(sql, new { Artist = artist });
+    }
+
+    public async Task Create(Song song){
+        using var connection = _context.CreateConnection();
+        var sql = """
+            INSERT INTO Songs (Title, Artist)
+            VALUES (@Title, @Artist)
+        """;
+        await connection.ExecuteAsync(sql, song);
+    }
+
+    public async Task Update(Song song){
+        using var connection = _context.CreateConnection();
+        var sql = """
+            UPDATE Songs
+            SET Title = @Title
+                Artist = @Artist
+            WHERE Id = @Id
+        """;
+        await connection.ExecuteAsync(sql, song);
+    }
+
+    public async Task Delete(int id){
+        using var connection = _context.CreateConnection();
+        var sql = """
+            DELETE FROM Songs
+            WHERE Id = @Id
+        """;
+        await connection.ExecuteAsync(sql, new { id });
+    }
 }
