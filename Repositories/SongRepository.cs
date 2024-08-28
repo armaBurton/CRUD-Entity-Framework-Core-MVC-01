@@ -33,15 +33,15 @@ public class SongRepository : ISongRepository{
         using var connection = _context.CreateConnection();
         var sql = """
             SELECT * FROM Songs
-            WHERE Id = @Id
+            WHERE Id = @id
         """;
         return await connection.QuerySingleOrDefaultAsync<User>(sql, new { id });
     }
 
-    public async Task<Song> GetByTitle(string Title){
+    public async Task<Song> GetByTitle(string title){
         var sql = """
             SELECT * FROM Songs
-            WHERE Title = @Title
+            WHERE Title = @title
         """;
         return await connection.QuerySingleOrDefaultAsync<Song>(sql, new { title });
     }
@@ -49,7 +49,7 @@ public class SongRepository : ISongRepository{
     public async Task<Song> GetByArtist(string artist){
         var sql = """
             SELECT * FROM Songs
-            WHERE Artist = @Artist
+            WHERE Artist = @artist
         """;
         return await connection.QueryAsync<Song>(sql, new { Artist = artist });
     }
