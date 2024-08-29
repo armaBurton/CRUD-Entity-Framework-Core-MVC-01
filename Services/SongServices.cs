@@ -60,13 +60,13 @@ public class SongService : ISongService{
         await _songRepository.Create(song);
     }
 
-    public async Update(int id, UpdateRequest model){
+    public async Task Update(int id, UpdateRequest model){
         var song = await _songRepository.GetById(id);
 
         if (song == null) throw new KeyNotFoundException("Song not found");
 
         //validate
-        var titleChanged = !string.IsNullOrEmpty(model.Title) && user.Title != model.Title;
+        var titleChanged = !string.IsNullOrEmpty(model.Title) && song.Title != model.Title;
         if (titleChanged && await _songRepository.GetByTitle(model.Title!) != null)
             throw new AppException("Song with the title '" + model.Title + "' already exists");
         

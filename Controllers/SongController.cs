@@ -9,7 +9,7 @@ using CRUD_Entity_Framework_Core_MVC_01.Services;
 public class SongsController : ControllerBase {
     private ISongService _songService;
 
-    public SongsController(ISongervice songService){
+    public SongsController(ISongService songService){
         _songService = songService;
     }
 

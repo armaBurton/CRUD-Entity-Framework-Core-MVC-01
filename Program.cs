@@ -17,9 +17,9 @@ var builder = WebApplication.CreateBuilder(args);
         x.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
 
         //ignore omitted parameters on models to enable optional params (e.g. User update)
-        x.JsonSerializerOptions.DefaultIgnoreCondition.Add(new JsonStringEnumConverter());
+        x.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
     });
-    services.AddAutoMapper(AppDomain, CurrentDomain, GetAssemblies());
+    services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
     // configure strongly typed settings object
     services.Configure<DbSettings>(builder.Configuration.GetSection("DbSettings"));
