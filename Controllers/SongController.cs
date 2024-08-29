@@ -16,9 +16,9 @@ public class SongsController : ControllerBase {
     [HttpGet]
     public async Task<IActionResult> GetAll(){
         var songs = await _songService.getAll();
-        return Ok(users);
+        return Ok(songs);
     }
-
+    
     [HttpGet("{id}")]
     public async Task<IActionResult> GetById(int id){
         var song = await _songService.GetById(id);
@@ -40,6 +40,6 @@ public class SongsController : ControllerBase {
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(int id){
         await _songService.Delete(id);
-        return OK(new { message = "User deleted"});
+        return Ok(new { message = "User deleted"});
     }
 }

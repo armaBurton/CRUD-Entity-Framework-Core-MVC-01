@@ -39,6 +39,7 @@ public class SongRepository : ISongRepository{
     }
 
     public async Task<Song> GetByTitle(string title){
+        using var connection = _context.CreateConnection();
         var sql = """
             SELECT * FROM Songs
             WHERE Title = @title

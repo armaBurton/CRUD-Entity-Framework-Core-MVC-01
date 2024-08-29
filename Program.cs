@@ -20,6 +20,7 @@ var builder = WebApplication.CreateBuilder(args);
         x.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
     });
     services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+    // services.AddAutoMapper(typeof(Program).Assembly);
 
     // configure strongly typed settings object
     services.Configure<DbSettings>(builder.Configuration.GetSection("DbSettings"));
@@ -34,7 +35,7 @@ var app = builder.Build();
 
 //ensure database and tables exist
 {
-    using var scope = app.services.CreateScope();
+    using var scope = app.Services.CreateScope();
     var context = scope.ServiceProvider.GetRequiredService<DataContext>();
     await context.Init();
 }
@@ -55,6 +56,3 @@ var app = builder.Build();
 }
 
 app.Run("http://localhost:4000");
-
-
-app.Run();

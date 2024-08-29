@@ -21,6 +21,14 @@ public class SongService : ISongService{
     private ISongRepository _songRepository;
     private readonly IMapper _mapper;
 
+    public SongService(
+        ISongRepository songRepository;
+        IMapper mapper;
+    ){
+        _songRepository = songRepository;
+        _mapper = mapper;
+    }
+
     public async Task<IEnumerable<Song>> GetAll(){
         return await _songRepository.GetAll();
     }
