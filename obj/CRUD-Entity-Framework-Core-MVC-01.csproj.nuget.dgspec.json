@@ -57,17 +57,9 @@
               "target": "Package",
               "version": "[2.1.35, )"
             },
-            "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[7.0.7, )"
-            },
             "Npgsql": {
               "target": "Package",
               "version": "[8.0.3, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.5.0, )"
             }
           },
           "imports": [

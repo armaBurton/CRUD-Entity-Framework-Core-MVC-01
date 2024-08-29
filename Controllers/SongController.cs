@@ -1,11 +1,11 @@
-using CRUD_Entity_Framework_Core_MVC_01.Controllers;
+namespace CRUD_Entity_Framework_Core_MVC_01.Controllers;
 
 using Microsoft.AspNetCore.Mvc;
 using CRUD_Entity_Framework_Core_MVC_01.Models.Songs;
 using CRUD_Entity_Framework_Core_MVC_01.Services;
 
 [ApiController]
-[Rout("[controller]")]
+[Route("[controller]")]
 public class SongsController : ControllerBase {
     private ISongService _songService;
 

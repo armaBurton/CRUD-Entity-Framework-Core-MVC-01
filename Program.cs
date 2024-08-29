@@ -1,5 +1,7 @@
 using System.Text.Json.Serialization;
 using CRUD_Entity_Framework_Core_MVC_01.Helpers;
+using CRUD_Entity_Framework_Core_MVC_01.Reopsitories;
+using CRUD_Entity_Framework_Core_MVC_01.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -24,7 +26,8 @@ var builder = WebApplication.CreateBuilder(args);
 
     //configure container for applications services
     services.AddSingleton<DataContext>();
-    services.AddScoped()<IKaraokeReopsitory, KaraokeRepository>();
+    services.AddScoped<ISongRepository, SongRepository>();
+    services.AddScoped<ISongService, SongService>();
 }
 
 var app = builder.Build();

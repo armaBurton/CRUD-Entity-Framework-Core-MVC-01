@@ -1,0 +1,6 @@
+D:\001 work\projects\c#\CRUD-Entity-Framework-Core-MVC-01\obj\Debug\net7.0\CRUD-Entity-Framework-Core-MVC-01.csproj.AssemblyReference.cache
+D:\001 work\projects\c#\CRUD-Entity-Framework-Core-MVC-01\obj\Debug\net7.0\CRUD-Entity-Framework-Core-MVC-01.GeneratedMSBuildEditorConfig.editorconfig
+D:\001 work\projects\c#\CRUD-Entity-Framework-Core-MVC-01\obj\Debug\net7.0\CRUD-Entity-Framework-Core-MVC-01.AssemblyInfoInputs.cache
+D:\001 work\projects\c#\CRUD-Entity-Framework-Core-MVC-01\obj\Debug\net7.0\CRUD-Entity-Framework-Core-MVC-01.AssemblyInfo.cs
+D:\001 work\projects\c#\CRUD-Entity-Framework-Core-MVC-01\obj\Debug\net7.0\CRUD-Entity-Framework-Core-MVC-01.csproj.CoreCompileInputs.cache
+D:\001 work\projects\c#\CRUD-Entity-Framework-Core-MVC-01\obj\Debug\net7.0\CRUD-Entity-Framework-Core-MVC-01.MvcApplicationPartsAssemblyInfo.cache

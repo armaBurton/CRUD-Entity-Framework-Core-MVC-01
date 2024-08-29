@@ -13,7 +13,7 @@ public interface ISongService{
     Task<Song> GetByTitle(string title);
     Task<IEnumerable<Song>> GetByArtist(string artist);
     Task Create(CreateRequest model);
-    Task Update(int, id, UpdateRequest model);
+    Task Update(int id, UpdateRequest model);
     Task Delete(int id);
 }
 
@@ -81,7 +81,7 @@ public class SongService : ISongService{
         await _songRepository.Update(song);
     }
 
-    public async Task Delete(id){
+    public async Task Delete(int id){
         await _songRepository.Delete(id);
     }
 }
