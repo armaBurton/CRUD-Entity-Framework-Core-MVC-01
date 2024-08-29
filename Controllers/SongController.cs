@@ -15,7 +15,7 @@ public class SongsController : ControllerBase {
 
     [HttpGet]
     public async Task<IActionResult> GetAll(){
-        var songs = await _songService.getAll();
+        var songs = await _songService.GetAll();
         return Ok(songs);
     }
     

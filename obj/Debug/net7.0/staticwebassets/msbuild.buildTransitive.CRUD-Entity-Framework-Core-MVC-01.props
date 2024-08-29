@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\CRUD-Entity-Framework-Core-MVC-01.props" />
+</Project>

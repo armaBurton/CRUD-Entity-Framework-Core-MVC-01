@@ -15,7 +15,7 @@ public interface ISongRepository{
 }
 
 public class SongRepository : ISongRepository{
-    private readonly DataContext _context;
+    private DataContext _context;
 
     public SongRepository(DataContext context){
         _context = context;
@@ -48,6 +48,7 @@ public class SongRepository : ISongRepository{
     }
 
     public async Task<IEnumerable<Song>> GetByArtist(string artist){
+        using var connection = _context.CreateConnection();
         var sql = """
             SELECT * FROM Songs
             WHERE Artist = @artist

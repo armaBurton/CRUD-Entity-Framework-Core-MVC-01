@@ -22,8 +22,8 @@ public class SongService : ISongService{
     private readonly IMapper _mapper;
 
     public SongService(
-        ISongRepository songRepository;
-        IMapper mapper;
+        ISongRepository songRepository,
+        IMapper mapper
     ){
         _songRepository = songRepository;
         _mapper = mapper;

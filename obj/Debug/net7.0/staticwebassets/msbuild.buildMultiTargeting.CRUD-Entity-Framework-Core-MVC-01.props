@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CRUD-Entity-Framework-Core-MVC-01.props" />
+</Project>
