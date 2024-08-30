@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 using CRUD_Entity_Framework_Core_MVC_01.Helpers;
-using CRUD_Entity_Framework_Core_MVC_01.Reopsitories;
+using CRUD_Entity_Framework_Core_MVC_01.Repositories;
 using CRUD_Entity_Framework_Core_MVC_01.Services;
 
 

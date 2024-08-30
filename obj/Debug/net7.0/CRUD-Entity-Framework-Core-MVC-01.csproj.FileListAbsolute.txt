@@ -1,9 +1,3 @@
-D:\001 work\projects\c#\CRUD-Entity-Framework-Core-MVC-01\obj\Debug\net7.0\CRUD-Entity-Framework-Core-MVC-01.csproj.AssemblyReference.cache
-D:\001 work\projects\c#\CRUD-Entity-Framework-Core-MVC-01\obj\Debug\net7.0\CRUD-Entity-Framework-Core-MVC-01.GeneratedMSBuildEditorConfig.editorconfig
-D:\001 work\projects\c#\CRUD-Entity-Framework-Core-MVC-01\obj\Debug\net7.0\CRUD-Entity-Framework-Core-MVC-01.AssemblyInfoInputs.cache
-D:\001 work\projects\c#\CRUD-Entity-Framework-Core-MVC-01\obj\Debug\net7.0\CRUD-Entity-Framework-Core-MVC-01.AssemblyInfo.cs
-D:\001 work\projects\c#\CRUD-Entity-Framework-Core-MVC-01\obj\Debug\net7.0\CRUD-Entity-Framework-Core-MVC-01.csproj.CoreCompileInputs.cache
-D:\001 work\projects\c#\CRUD-Entity-Framework-Core-MVC-01\obj\Debug\net7.0\CRUD-Entity-Framework-Core-MVC-01.MvcApplicationPartsAssemblyInfo.cache
 D:\001 work\projects\c#\CRUD-Entity-Framework-Core-MVC-01\bin\Debug\net7.0\appsettings.Development.json
 D:\001 work\projects\c#\CRUD-Entity-Framework-Core-MVC-01\bin\Debug\net7.0\appsettings.json
 D:\001 work\projects\c#\CRUD-Entity-Framework-Core-MVC-01\bin\Debug\net7.0\CRUD-Entity-Framework-Core-MVC-01.exe
@@ -17,6 +11,12 @@ D:\001 work\projects\c#\CRUD-Entity-Framework-Core-MVC-01\bin\Debug\net7.0\Dappe
 D:\001 work\projects\c#\CRUD-Entity-Framework-Core-MVC-01\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 D:\001 work\projects\c#\CRUD-Entity-Framework-Core-MVC-01\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
 D:\001 work\projects\c#\CRUD-Entity-Framework-Core-MVC-01\bin\Debug\net7.0\Npgsql.dll
+D:\001 work\projects\c#\CRUD-Entity-Framework-Core-MVC-01\obj\Debug\net7.0\CRUD-Entity-Framework-Core-MVC-01.csproj.AssemblyReference.cache
+D:\001 work\projects\c#\CRUD-Entity-Framework-Core-MVC-01\obj\Debug\net7.0\CRUD-Entity-Framework-Core-MVC-01.GeneratedMSBuildEditorConfig.editorconfig
+D:\001 work\projects\c#\CRUD-Entity-Framework-Core-MVC-01\obj\Debug\net7.0\CRUD-Entity-Framework-Core-MVC-01.AssemblyInfoInputs.cache
+D:\001 work\projects\c#\CRUD-Entity-Framework-Core-MVC-01\obj\Debug\net7.0\CRUD-Entity-Framework-Core-MVC-01.AssemblyInfo.cs
+D:\001 work\projects\c#\CRUD-Entity-Framework-Core-MVC-01\obj\Debug\net7.0\CRUD-Entity-Framework-Core-MVC-01.csproj.CoreCompileInputs.cache
+D:\001 work\projects\c#\CRUD-Entity-Framework-Core-MVC-01\obj\Debug\net7.0\CRUD-Entity-Framework-Core-MVC-01.MvcApplicationPartsAssemblyInfo.cache
 D:\001 work\projects\c#\CRUD-Entity-Framework-Core-MVC-01\obj\Debug\net7.0\staticwebassets\msbuild.CRUD-Entity-Framework-Core-MVC-01.Microsoft.AspNetCore.StaticWebAssets.props
 D:\001 work\projects\c#\CRUD-Entity-Framework-Core-MVC-01\obj\Debug\net7.0\staticwebassets\msbuild.build.CRUD-Entity-Framework-Core-MVC-01.props
 D:\001 work\projects\c#\CRUD-Entity-Framework-Core-MVC-01\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.CRUD-Entity-Framework-Core-MVC-01.props

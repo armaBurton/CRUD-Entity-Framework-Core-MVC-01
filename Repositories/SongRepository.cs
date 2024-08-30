@@ -1,4 +1,4 @@
-namespace CRUD_Entity_Framework_Core_MVC_01.Reopsitories;
+namespace CRUD_Entity_Framework_Core_MVC_01.Repositories;
 
 using Dapper;
 using CRUD_Entity_Framework_Core_MVC_01.Entities;

@@ -5,7 +5,7 @@ using BCrypt.Net;
 using CRUD_Entity_Framework_Core_MVC_01.Entities;
 using CRUD_Entity_Framework_Core_MVC_01.Helpers;
 using CRUD_Entity_Framework_Core_MVC_01.Models.Songs;
-using CRUD_Entity_Framework_Core_MVC_01.Reopsitories;
+using CRUD_Entity_Framework_Core_MVC_01.Repositories;
 
 public interface ISongService{
     Task<IEnumerable<Song>> GetAll();
